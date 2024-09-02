@@ -1,0 +1,938 @@
+<script  id="ch0103/01">
+    var a =Number(prompt('请输入A'))
+    var b =Number(prompt('请输入B'))
+
+    var c =a + b
+    console.loge(c)
+</script>
+
+<script id="ch103/02">
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+    var c = Number(prompt('c'))
+    result = (a + b) * c
+    console.log(result)
+
+</script>
+ 
+<script id="ch103/03">
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+    var c = Number(prompt('c'))
+
+    var result = (a + b ) / c 
+    console.log(Math.floor(result))
+
+</script>
+
+<script id="ch103/04">
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+
+    result = a / b 
+    余数 = a % b 
+
+    console.log(result.toFixed(0))
+    console.log(余数)
+</script>
+
+<script id="ch103/05">
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+
+    result = a / b
+    console.log(result.toFixed(9))
+
+</script>
+
+<script id="ch103/06">
+    var x = Number(prompt('x')) //死亡人数
+    var y = Number(prompt('y'))
+
+    result = x / y * 100
+    console.log(result.toFixed(3) + '%')
+
+</script>
+
+<script id="ch103/07">
+    var x = Number(prompt('x'))
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+    var c = Number(prompt('c'))
+    var d = Number(prompt('d'))
+    
+
+    var f = a * x ** 3 + b * x ** 2 + c * x + d
+
+    console.log(f.toFixed(7))
+
+</script>
+
+<script id="ch103/08">
+    var F = Number(prompt('f'))
+    C = 5 * (F - 32) / 9
+    console.log(C.toFixed(5))
+
+</script>
+
+<script id="ch103/09">
+    var r = Number(prompt('r'))
+    var pi = 3.14159
+    d = 2 * r 
+    C = 2 * pi * r 
+    S = pi * r ** 2
+
+    console.log(d.toFixed(4))
+    console.log(C.toFixed(4))
+    console.log(S.toFixed(4))
+</script>
+
+<script id="ch103/10">
+    var r1 = Number(prompt('r1'))  
+    var r2 = Number(prompt('r2'))
+
+    R = 1 / (1 / r1 + 1 / r2)
+
+    console.log(R.toFixed(2))
+</script>
+
+<script id="ch103/11">
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+
+    result = a % b
+    console.log(result.toFixed(4))
+</script>
+
+<script id="ch103/12">
+    var r = Number(prompt('r'))
+    pi = 3.14
+    V = 4 / 3 * pi * r ** 3
+    console.log(V.toFixed(2))
+
+</script>
+
+<script id="ch103/13">  错误有问题
+    var n = Number(prompt('n'))
+    var ge = n % 10 
+    var shi = (n % 100)  - ge
+    var bai = n - (shi * 10 + ge)
+
+    console.log('ge'+ 'shi'+ 'bai')
+</script>
+
+<script id="ch103/14">
+    var h = Number(prompt('h'))
+    var r = Number(prompt('r'))
+    Pi = 3.14159
+    V = (Pi * r ** 2 * h )/ 1000 //注意这只是一桶水有多少升，大象要喝20才行
+    T  = 20 / V
+    console.log(Math.ceil(T))
+
+</script>
+
+<script id="ch103/15">
+    var n =  Number(prompt('n'))
+    var x =  Number(prompt('x'))
+    var y =  Number(prompt('y'))
+
+    eateapple = Math.ceil(y / x )
+
+    lastapple = n - eateapple
+    console.log(lastapple)
+
+</script>
+
+<script id="ch103/16">
+    var xa = Number(prompt('xa'))
+    var ya = Number(prompt('ya'))
+    var xb = Number(prompt('xb'))
+    var yb = Number(prompt('yb'))
+
+    x = Math.abs(xb - xa )
+    y = Math.abs(yb- ya)
+    length = Math.sqrt(x ** 2 + y ** 2)
+
+    console.log(length.toFixed(3))
+</script>
+
+<script id="ch103/17">
+    var x1 = Number(prompt('x1'))
+    var y1= Number(prompt('y1'))
+    var x2 = Number(prompt('x2'))
+    var y2 = Number(prompt('y2'))
+    var x3 = Number(prompt('x3'))
+    var y3 = Number(prompt('y3'))
+    debugger;
+    a = Math.sqrt( (x1 - x2) ** 2 + (y1 - y2) ** 2)
+    b = Math.sqrt( (x1 - x3) ** 2 + (y1 - y3) ** 2)
+    c = Math.sqrt( (x3 - x2) ** 2 + (y3 - y2) ** 2)
+
+    p = (a + b + c) / 2
+
+    S = Math.sqrt (p * (p-a) * (p-b) *(p-c))
+    console.log(S.toFixed(2))
+</script>
+
+<script id="ch103/18"> 错误
+var a1 = Number(prompt('a1'))
+var a2 = Number(prompt('a2'))
+var n = Number(prompt('n'))
+
+d = a2 - a1
+Sn= (n * a1 ) + n * (n-1) * d / 2
+</script>
+
+<script id="ch103/19">
+    var A = Number(prompt('A'))
+    var B = Number(prompt('B'))
+
+    result = A * B
+    console.log(result)
+
+</script>
+
+<script id="ch103/20">
+    var n = Number(prompt(''))
+    mi = 2 ** n 
+    console.log(mi)
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script id="ch104/01">
+    var N = Number(prompt('n'))
+    if (N > 0){
+        console.log('positive')
+    } else  if (N < 0){
+        console.log('negative')
+    }  else {console.log('zero')
+
+    }
+        
+</script>
+
+<script id="ch104/02">
+    var N = Number(prompt('n'))
+    if (N >= 0){
+        console.log(N)
+    } else (N < 0) 
+        console.log(-N)
+</script>
+
+<script id="ch104/03">
+    var n = Number(prompt("n"))
+    if (n % 2 == 0) {
+        console.log('even')
+    } else (n % 2 == 1)
+    console.log('odd')
+</script>
+
+<script id="ch104/04">
+    var ascii = char.cahrcodeAt()
+
+    if  (ascii % 2 == 1) {
+    console.log('YES')
+} else{
+    console.log('NO')
+}
+</script>
+
+<script id="ch104/05">
+    var x = Number(prompt('x'))
+    var y = Number(prompt('y'))
+
+    if (x > y) {
+        console.log('>')
+    } else if (x < y) {
+        console.log('<')
+    } else {
+        console.log('=')
+    }
+</script>
+
+<script id="ch104/06">
+    var n = Number(prompt("n"))
+    if (n >10 || n <= 100) {
+        console.log(1)
+    } else
+        console.log(0)
+
+
+</script>
+
+<script id="ch104/07">
+    var lucky = Number(prompt('l'))
+    var encourage = Number(prompt('e'))
+    if (lucky>=10 && encourage >= 20) {
+        console.log(1)
+    } else {
+        console.log(2)
+    }
+
+</script>
+
+<script id="ch104/08">//有问题错误
+    var n = Number(prompt('n'))
+    if (n % 3 && n % 5) {
+        console.log('YES')
+    } else 
+        console.log('NO')
+
+</script>
+
+<script id="ch104/09"> //未做
+
+
+</script>
+
+<script id="ch104/10">
+    var Chinease = Number(prompt('Chinease'))
+    var Math = Number(prompt('Math'))
+    if (Chinease < 60 && Math < 60) {
+        console.log(1)
+    } else 
+        console.log(0)
+
+</script>
+
+<script id="ch104/11">
+    var day = Number(prompt('day'))
+    if (1 || 3 || 5) {
+        console.log('YES')
+    } else
+        console.log('NO')
+
+</script>
+
+<script id="ch104/12">//有问题
+    var d = Number(prompt("d"))
+    var Bike =  d / 1.2 + (27 + 23)
+    var Walk = (d / 3.0)
+
+    if (Bike > Walk) {
+        console.log('Bike')
+    } if (Bike < Walk) {
+        console.log('Walk')
+    } else 
+        console.log(All)
+</script>
+
+<script id="ch104/13">
+
+    var x = Number(prompt('x'))
+    var y1= -x + 2.5
+    var y2= 2 - 1.5 * (x - 3) *( x - 3)
+    var y3= x / 2-  1.5
+    if (0 <= x < 5) {
+        console.log(y1.toFixed(3))
+    } else if(5 <= x < 10) {
+        console.log(y2.toFixed(3))
+    } else( 10 <= x < 20)
+        console.log(y3.toFixed(3))
+        
+</script>
+
+<script id="ch104/14">有问题
+    debugger;
+    var weight = Number(prompt('weight'))
+    var 是否加急 = prompt("x && y")
+    var heightweight = Math.ceil(Number((weight - 1000)/ 500)) * 4 + 8
+    var y =  weight + 5
+    var x =  weight + 0
+    if (weight < 1000) {
+        console.log(8)
+    } else if(weight > 1000) {
+        console.log(heightweight )
+    } else if (fast = "y"){
+        console.log("y")
+    } else(fast == "x") 
+        console.log("x")
+
+       
+</script>
+
+<script id="ch104/15">不会
+    var x = Number(prompt('x'))
+    var y = Number(prompt('y'))
+    var z = Number(prompt('z'))
+
+    if (x > y) {
+        consonle.log(x)
+    } else (x < y ) {
+        console.log(y)
+        
+    }
+
+</script>
+
+<script id="ch104/16"> 有瑕疵
+    var x = Number(prompt('x'))
+    var y = Number(prompt('y'))
+    var z = Number(prompt('z'))
+    if (x || y > z,x || z > y,y || z > x ){
+        console.log('YES')
+    }
+       
+     else 
+        console.log('NO')
+
+     
+</script>
+
+<script id="ch104/17">
+    var year = Number(prompt('year'))
+    if (year % 4==0 && year % 100 ==0 || year % 400 ==1) {
+        console.log('Y')
+    } else 
+        console.log('N')
+</script>
+
+<script id="ch104/18">  错误
+    var x = Number(prompt('x'))
+    var y = Number(prompt('y'))
+    if (-1 <= x <= 1 && -1 <= y <= 1)
+        console.log('YES')
+     else
+        console.log('NO')
+</script>
+
+<script id="ch104/19">
+    var x =Number(prompt('x'))
+    var y =Number(prompt('y')) 
+    var z = x + y 
+    if 
+</script>
+
+<script id="ch104/20"> //错误
+    debugger;
+    var a = Number(prompt('a'))
+    var b = Number(prompt('b'))
+    var c = Number(prompt('c'))
+    var x1 = (-b + Math.sqrt(b * b- 4 * a * c)) / (2 * a),
+    var x2 = (-b - Math.sqrt(b * b- 4 * a * c )) / (2 * a)
+    if (x1 == x2 ){
+        console.log("x1=x2")
+    } else (x1 != x2)
+        sonsole.log('x1')
+        console.log('x2')
+    
+    
+</script>
+
+<script id="ch104/21">不会
+    var n = Number(prompt('n'))
+    var x = Number(prompt('x'))
+    var y = Number(prompt('y'))
+    
+</script>
+
+
+
+
+<script id="ch105/01">
+    var n = Number((prompt("人数")))
+    c = 0
+    var sum = 0
+    while (c < n) {
+        age =  Number((prompt("年龄")))
+        sum = sum + age 
+        c = c + 1
+    }
+    console.log((sum / n ).toFixed(2))
+</script>
+
+<script id="ch105/02">
+    var sum = 0
+    c = 0
+    while (c < 12) {
+        var n = Number(prompt("每个月的结余"))
+        sum = sum + n
+        c = c + 1
+    }
+    console.log((sum / 12).toFixed(2))
+
+
+</script>
+
+<script id="ch105/03">
+    var n = Number(prompt('样本容量'))
+    c = 0 
+    sum = 0
+    while (c < n ){
+        var a = Number(prompt('样本数据'))
+        sum = sum + a
+        c = c + 1 
+    }
+    console.log((sum / n ).toFixed(4))
+
+</script>
+
+<script id="ch103/04">
+    var n = Number(prompt('有几个整数'))
+    c = 0 
+    sum = 0
+    while (c < n) {
+        var a = Number(prompt('整数'))
+        sum = sum + a
+        c = c + 1
+    }
+    console.log(sum)
+    console.log((sum / 4 ).toFixed(5))
+</script>
+
+<script id="ch105/05"> 
+    var n = +prompt('考试人数')
+    var max = 0
+    c = 0
+    while (c < n){
+        num =  +prompt('学生成绩')
+        if (num > max){
+            max = num
+        }
+        c = c + 1 
+    }
+    console.log(max)
+
+</script>
+
+
+
+<script id="ch105/06">
+  var n = +prompt("输入个数")
+  var max = 0
+  var min = 0
+
+  c = 0  
+  while(c < n){
+    var length = +prompt('输入长度')
+    if (length > max) {
+        max = length
+    } 
+    if (length < min) {
+        min = length
+    }
+    c = c + 1
+  }
+  console.log(max - min)
+  
+</script>
+
+<script id="ch105/07">
+  var n = +prompt('参加天数')
+  var sum1 = 0
+  var sum2 = 0
+  var sum3 = 0
+
+  c = 0   
+  while (c < n){
+    var a = +prompt('获取金牌数量')
+    sum1 = sum1 + a
+
+    var b = +prompt('获取银牌数量')
+    sum2 = sum2 + b
+
+    var d  = +prompt('获取铜牌数量')
+    sum3 = sum3 + d
+
+    c = c + 1
+  }
+  console.log(sum1 + sum2 + sum3)
+  console.log(sum1,sum2,sum3)
+</script>
+
+<script id="ch105/08">
+  var n = +prompt('几边形')
+  var sum = 0
+  
+  c = 0
+  while (c < (n -1) ) {
+    var a = +prompt("内角度数")
+    sum = sum + a
+    c = c + 1
+  }
+  anglesum = (n - 2) * 180
+  lastangle = anglesum - sum
+  console.log (lastangle)
+</script>
+
+<script id="ch104/09"> //错误
+  var a = +prompt('输入一个数')
+  
+  if (a % 3 == 0 || a % 5 == 0 ||  a % 7 ==0){//只能够被3,5,7三个数整除
+    console.log(3 + ""  + 5 + "" + 7 )
+  } else if ((a % 3 == 0 && a % 5 == 0)|| ( a % 3 == 0 && a % 7 == 0) ||
+        (a % 7 ==0 && a % 5 == 0)) {                 //只能够被两个数整除
+                if ((a % 3 == 0 && a % 5 == 0)) {
+                console.log(3 + "" + 5)  
+        }       else if (a % 3 == 0 && a % 7 == 0){
+                console.log(3 + "" + 7)
+        }         else (a % 7 ==0 && a % 5 == 0)
+                console.log(5 + "" + 7)
+        
+   
+  }  else  if ((a % 3 == 0 && a % 5 != 0 && a % 7 != 0)|| //只能被一个数整除
+              (a % 5 == 0 && a % 3 != 0 && a % 7 != 0 )||
+              (a % 7 == 0 && a % 3 != 0 && a % 5 != 0)) {
+            console.log()
+    }  else (a % 3 != 0 || a % 5 != 0 || a % 7 != 0) //不能被这三个整除
+            console.log("n")
+        
+    
+</script>
+
+<script id="ch104/09">//错误
+    debugger;
+    var m = +prompt('输入m')
+    var n = +prompt('输入n')
+    var sum = 0
+    
+    while(m <= n ) {
+        if (m % 2 !== 0) { //这里为什么要用if语句，目的就是为了（筛选）判断m是否是奇数
+                           //如果直接写成 odd = (m % 2) !== 0 就会变为布尔值导致错误
+                           
+            sum = sum + m
+        }
+        m = m + 1
+    }
+    console.log(sum)
+</script>
+
+<script id="ch105/10">
+    var m = +prompt('输入m')
+    var n = +prompt('输入n')
+    var sum = 0
+    
+    while ( m <= n ) {
+        if (m % 17 == 0) {
+            sum = sum + m 
+        }
+        m = m + 1
+    }
+        console.log(sum)
+</script>
+
+<script id="ch105/11">
+    var k = +prompt('第一行正整数')
+    var sum1 = 0
+    var sum2 = 0
+    var sum3 = 0
+
+    var c = 0
+    while (c < k) {
+        var a = +prompt('第二行输入正整数')
+        if (a == 1) {
+            sum1 += 1
+        } else if (a == 5){
+            sum2 += 1
+        } else if(a == 10)
+            sum3 += 1
+        c += 1
+    }
+    console.log(sum1,sum2,sum3)
+</script>
+
+<script id="ch105/12">
+    var N = +prompt('几个数')
+    var m = +prompt('比较整数')
+    var sum = 0
+
+    var c = 0
+    while( c < N) {
+        var a = +prompt('输入整数')
+        if (a ==  m){
+            sum += 1
+        }
+        c ++
+    }
+    console.log(sum)
+</script>
+
+<script id="ch105/13">//简单
+    var a = +prompt('整数')
+    var n = +prompt('几次方')
+    sum = a ** n
+    console.log(sum)
+</script>
+
+<script id="ch105/14">
+    var x = +prompt('我国几亿人口')
+    var n = +prompt('几年')
+   
+    result = x  * (1 + 0.001) ** n 
+console.log((result).toFixed(4))
+
+var 
+</script>
+
+<script id=" ch105/15">
+    var R = +prompt('投资复合年利率')
+    var M  = +prompt('总值的钱数')
+    var Y  = +prompt('投资几年')
+    var sum = M * (1 + 0.01 * R) ** Y
+    console.log(Math.trunc(sum))
+
+</script>
+
+<script id="ch105/16">
+  var N = +prompt('年薪多少万')
+  var k = +prompt('房子增长率')
+  var M = 0
+ 
+  while (M <=20 ) {
+    money = M * N
+    house = 200 * (1 + 0.01 * k) ** M
+    if (money > house ) {
+        console.log(M)
+    } else  if (money < house) 
+        console.log("Impossible")
+    M ++;
+}
+</script>
+
+<script id="ch105/17">//错误，不会写菲波那切数列
+    var k = +prompt('正整数k')
+    i = 0 
+    while (i < k ) {
+        var a = 0
+        var b = 1
+        fibb = a + b
+        a = b 
+        b = fibb
+        
+        i ++
+    }
+    console.log(fibb)
+</script>
+
+<script id="ch105/18"> //做对了
+    var n = +prompt('整数n') 
+    var a= +prompt('鸡尾酒疗有效病例')
+    var b = +prompt('鸡尾酒临床总病例')
+    var x = a / b
+    i = 0
+    while (i < n ) {
+        var a = +prompt('鸡尾酒疗有效病例')
+        var b = +prompt('鸡尾酒临床总病例')
+        var y = a / b
+        if (y - x > 0.05){
+            console.log('better')
+        } else if (x - y > 0.05) {
+            console.log('worse')
+        } else {
+            console.log('same')
+        }
+    
+        i = i + 1       
+    }     
+</script>
+
+<script id="ch105/19">
+    var n = +prompt('屋顶数量')
+
+    i = 0
+    b = 0
+    while(i <= n) {
+        var d = +prompt('屋顶距离大本营的坐标')
+        b = d ** 2 + b
+        i ++
+    }
+    var a = +prompt('人数')
+    c = Math.sqrt(b)
+    time = (c / 50) * 2 + 1 * a + 0.5 * a
+    console.log(Math.ceil(time) )
+</script>
+
+<script id="ch105/20">
+    var a = +prompt('球的初始高度')
+    height = a
+    sum  = 0
+    i = 0
+    while  (i < 10 ) { 
+      sum = sum + height
+      height = height / 2
+      
+      i ++
+    }
+    console.log(sum * 2 - 20)
+    console.log(height)
+    
+    
+
+       
+    
+</script>
+
+<script id="ch105/21"> //有问题
+  var n = +prompt('输入一个正整数')
+  var a = n 
+  while(a > 1) {
+    if (a % 2 !== 0) {
+        a = a * 3 + 1
+    } else {
+        a = a / 2
+    }    
+    console.log(a)
+    }
+</script>
+
+<script id="ch105/22"> //有问题
+    
+    var result = 0 //每个月剩余的零钱
+    var c = 0 //每个月存的钱
+    i = 0
+    while (i < 12) {
+        var m = +prompt('津津的预算')
+        
+        result = 300  - m + result
+        if (result >= 100) {
+            var a = 0 
+            a = result -(result % 100) + a//每个月够一百存起来
+            c = c + a
+            result = result - a
+        } 
+        i++ 
+    }
+    b = c * (1 + 0.2) + result 
+        console.log(b) 
+</script>
+
+<script id="ch105/23">//对了
+    var m = +prompt('药品数量')
+    var n = +prompt('取药人数')
+    var sum = 0
+    var count = 0 
+    i = 0
+    while (i < n) {
+        var a = +prompt('每人取走药品数量')
+        sum = a + sum 
+        
+        if (sum > m) {
+            count = count +  1
+            sum = sum - a
+        }
+        i++
+        }
+
+    console.log(count)
+</script>
+
+<script id="ch105/24">//有点小问题
+    var n = +prompt('正整数')
+    count = 0
+    i = 0
+    while (i < 4) {
+        var a = +prompt('收缩压')
+        var b = +prompt('舒张压')
+
+        if((90 <= a <= 140)||(60 <= b <= 90)) {
+            count++
+        }
+        i++
+    }
+
+</script>
+
+<script id="ch105/25">//先跳过
+</script>
+
+<script id="105/26">
+    var n = +prompt('四位数的个数')
+    count = 0
+    i = 0
+    ge = 0
+    shi = 0
+    bai = 0
+    qian = 0
+    while (i <= n){
+        var a = +prompt('输入一个四位数')
+        ge = a % 10
+        shi = (a - ge) / 10 % 10
+        bai = (a - ge - shi * 10) / 100 % 10 
+        qian = (a - ge - shi* 10 - bai * 100) / 1000
+        if ( (ge - qian - bai - shi) > 0) {
+        count++
+    }   
+    i++
+    }
+    console.log(count)
+   
+
+</script>
+
+<script id="ch105/27">
+    var k = +prompt('输入一个整数k')
+    Sn = 1
+
+    i = 0
+    while (i <= Sn) {
+        Sn =  1 / i 
+        if (Sn > k) {
+        }
+        i++
+    }
+    console.log(i)
+
+</script>
+
+<script id="ch105/28">
+    var n = +prompt('给定一个整数n')   
+    var ge = Math.floor (n  % 10)
+    var shi = Math.floor(n / 10 % 10)
+    var bai = Math.floor((n /100) % 10  )
+    console.log(ge + " " + shi + " " +  bai +" ")
+</script>
+
+<script id="ch105/29">
+
+
+    var n = +prompt('给定一个数n')
+    ge = Math.floor(n % 10)
+    shi = Math.floor(n / 10 ) % 10
+    bai = Math.floor(n / 100) % 10
+    var result = ""    
+    if (ge !== 0){
+        result += ge
+    } 
+    result += shi
+    if (bai !== 0){
+        result += bai
+    } 
+    console.log(result)
+</script>
+
+<script id="ch105/30">
+var k = +prompt('k')
+var m = +prompt('m')
+while ( m > 0) {
+    var sum= k % 3 
+    if (sum == 3 || m % 19 == 0 ) {
+        console.log('YES')
+    }
+    k = Math.floor(m / 10)
+}
+</script>
+
+<script id ="ch105/31">
+var n = +prompt('有n盏灯')
+var m = +prompt('有m个人')
+
+result = 0
+var i = m
+while (i <= n){
+    if (result){
+        result = result + result
+    }
+    i = i + m
+}
+    console.log(result)
+</script>
